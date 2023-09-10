@@ -3,7 +3,7 @@ import toml
 
 output_file = ".streamlit/secrets.toml"
 
-with open("D:\App\Templates\StFirebaseTmp\.streamlit\pullmai-e0bb0-firebase-adminsdk-6nr9p-271ac2626d.json") as json_file:
+with open(".streamlit\pullmai-e0bb0-firebase-adminsdk-6nr9p-334c8b1770.json") as json_file:
     json_text = json_file.read()
 
 config = {"textkey": json_text}
