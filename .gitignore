@@ -4,9 +4,12 @@ __pycache__/
 *$py.class
 
 # VS code
-.streamlit
+.streamlit/
 .streamlit\secrets.toml
 .streamlit\pullmai-e0bb0-firebase-adminsdk-6nr9p-271ac2626d.json
+
+#toml
+*.toml
 # C extensions
 *.so
 
