@@ -5,8 +5,9 @@ __pycache__/
 
 # VS code
 .streamlit/
-.streamlit\secrets.toml
-.streamlit\pullmai-e0bb0-firebase-adminsdk-6nr9p-271ac2626d.json
+.streamlit/secrets.toml
+.streamlit/pullmai-e0bb0-firebase-adminsdk-6nr9p-271ac2626d.json
+ext/
 
 #toml
 *.toml

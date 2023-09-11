@@ -35,8 +35,8 @@ def main():
     # Navigation bar Menu
     selected = option_menu(
         menu_title=None,  # menu title
-        options=['Inicio', 'Embeddings', 'Chat', 'Q&A', 'Extract', 'Store'],  # menu options
-        icons=['house', 'boxes', 'chat-right-text', 'question-circle', 'layers', 'archive'],  # menu icons
+        options=['Inicio', 'Chat', 'Q&A', 'Extract', 'Store'],  # menu options
+        icons=['house', 'chat-right-text', 'question-circle', 'layers', 'archive'],  # menu icons
         menu_icon="cast",  # menu icon
         default_index=0,  # default selected index
         orientation="horizontal"  # sidebar or navigation bar
@@ -44,9 +44,6 @@ def main():
 
     if selected == "Inicio":
         st.title("Inicio")
-    elif selected == "Embeddings":
-        st.title("Embeddings")
-        display_embeddings()
     elif selected == "Chat":
         st.title("Chat")
         display_chat()
