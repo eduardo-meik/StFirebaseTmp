@@ -7,7 +7,7 @@ from firebase_admin import credentials
 from app.embeddings import display_embeddings
 from app.chat import display_chat
 from app.store import display_store
-from app.qa import display_qa
+from app.qrvcard import display_qr
 from app.extract import display_extract
 from app.account import account  # Importing the account module
 
@@ -35,8 +35,8 @@ def main():
     # Navigation bar Menu
     selected = option_menu(
         menu_title=None,  # menu title
-        options=['Inicio', 'Chat', 'Q&A', 'Extract', 'Store'],  # menu options
-        icons=['house', 'chat-right-text', 'question-circle', 'layers', 'archive'],  # menu icons
+        options=['Inicio', 'QR vCard', 'Store'],  # menu options
+        icons=['house', 'layers', 'archive'],  # menu icons
         menu_icon="cast",  # menu icon
         default_index=0,  # default selected index
         orientation="horizontal"  # sidebar or navigation bar
@@ -44,15 +44,9 @@ def main():
 
     if selected == "Inicio":
         st.title("Inicio")
-    elif selected == "Chat":
-        st.title("Chat")
-        display_chat()
-    elif selected == "Q&A":
-        st.title("Questions & Answers")
-        display_qa()
-    elif selected == "Extract":
-        st.title("Extract")
-        display_extract()
+    elif selected == "QR vCard":
+        st.title("QR vCard")
+        display_qr()
     elif selected == "Store":
         st.title("Store")
         display_store()
